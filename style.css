@@ -1,0 +1,104 @@
+body
+{
+   font-family: 'Times New Roman', Times, serif;
+  overflow-x: hidden;
+  margin: 0px;
+  background-color:#333;
+  color: #222;
+}
+.container
+{
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+}
+.container.show
+{
+    transform: rotate(-20deg);
+}
+.container-circle
+{
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+.circle
+{
+    background-color: #ff7979;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    transition: transform 0.5s linear;
+}
+.circle button
+{
+    cursor: pointer;
+  position: absolute;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: white;
+}
+.circle button:focus
+{
+outline: none;
+}
+
+.content img
+{
+    width: 80vw;
+    margin-left: 94px;
+    border-radius: 100px;
+}
+#close
+{
+    top: 70px;
+    left: 39px;
+}
+#open
+{
+    top: 91px;
+    left: 117px;  
+}
+nav
+{
+    color: white;
+}
+small
+{
+    font-size: 20px;
+    line-height: 1.5;
+    text-decoration: dotted;
+    display: flex;
+ margin-top: 20px;
+ margin-right: 50px;
+ margin-bottom: 20px;
+}
+nav
+{
+    position: fixed;
+    bottom: 40px;
+    left: 0px;
+    z-index: 100;
+}
+nav ul
+{
+    list-style-type: none;
+    padding-left: 30px;
+}
+nav ul li
+{
+    text-transform: uppercase;
+    margin:40px auto;
+    transform: translateX(-250%);
+   
+}
+.container.show .circle
+{
+    transform: rotate(-90deg);
+    transition: transform 0.5s linear;
+}
